@@ -8,7 +8,7 @@ from kivymd.uix.boxlayout import MDBoxLayout
 from kivy.core.window import Window
 from kivy.uix.popup import Popup
 
-# Define Screen classes so Kivy recognizes them
+
 class MenuScreen(Screen):
     pass
 
@@ -31,7 +31,7 @@ class ModInverseScreen(Screen):
 def mod_inverse(e, n):
     g, x, _ = extended_gcd(e, n)
     if g != 1:
-        return None  # Modular inverse mavjud emas
+        return None  
     else:
         return x % n
 
